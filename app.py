@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0.2, api_key=api_key)
-st.set_page_config(page_title="Mohsin Rag System")
-st.title("Gemini PDF Chatbot")
+st.set_page_config(page_title="Gemini PDF Chatbot")
+st.title("Mohsin Rag System")
 
 uploaded_file = st.file_uploader("Upload a PDF", type="pdf")
 embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
