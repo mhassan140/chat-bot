@@ -5,3 +5,4 @@ pypdf
 sentence-transformers
 google-generativeai
 langchain-google-genai==4.1.1
+langchain-community
